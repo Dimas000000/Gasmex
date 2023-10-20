@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* ----- Desktop -----*/
+@media only screen and (min-width: 0px){
+    /* ----- Header ----- */
+    header{
+        
+    }
+}
