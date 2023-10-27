@@ -7,7 +7,16 @@ body{
     background-color: rgb(16, 0, 68);
 }
 header{
-    background-color: #aa00ff;
+    background-color: rgb(170, 0, 255);
+}
+.bol{
+    background-color: rgb(170, 0, 255);
+}
+.middle{
+    background-color: rgb(170, 0, 255);
+}
+.middleChildren{
+    background-color: rgb(16, 0, 68);
 }
 
 /* ---------- Media Queries ---------- */
@@ -16,7 +25,6 @@ header{
 @media only screen and (min-width: 0px){
     /* ----- Header ----- */
     header{
-        border-radius: 0 0 20vw 20vw;
         width: 100vw;
         display: flex;
         align-items: center;
@@ -39,7 +47,30 @@ header{
         width: 20vw;
     }
     .title{
-        padding-bottom: 10vw;
+        margin-bottom: 6vw;
         font-size: 12vw;
+    }
+    nav{
+        width: 100vw;
+        height: 15vw;
+        border-radius: 0 0 20vw 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bol{
+        border-radius: 0 0 20vw 20vw;
+        width: 28vw;
+        height: 20vw;
+    }
+    .middleChildren{
+        width: 44vw;
+        height: 20vw;
+        border-radius: 7vw 7vw 0 0;
+    }
+
+    /* ----- Main ----- */
+    main{
+
     }
 }
