@@ -35,6 +35,8 @@ header{
 }
 .buy{
     color: white;
+    background-color: rgb(205, 118, 255);
+    border-color: white;
 }
 footer{
     background-color: black;
@@ -44,7 +46,7 @@ footer{
 /* ---------- Media Queries ---------- */
 
 /* ----- Mobile -----*/
-@media only screen and (min-width: 0px){
+@media only screen and (max-width: 700px){
     /* ----- Header ----- */
     header{
         display: flex;
@@ -107,15 +109,18 @@ footer{
     
     /* ----- Main ----- */
     main{
-        margin-top: 20vw;
-        margin-bottom: 20vw;
+        margin: 20vw 0 20vw 0;
     }
     section{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .section2{
+        margin-top: 25vw;
+    }
     .subtitle{
+        text-align: center;
         font-size: 9vw;
         font-family: 'Chakra Petch', sans-serif;
         -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
@@ -146,8 +151,6 @@ footer{
         text-shadow: 1vw 0.5vw 0 black;
         padding: 1vw 5vw 1vw 5vw;
         border-radius: 5vw;
-        background-color: rgb(205, 118, 255);
-        border-color: white;
     }
 
     /* ----- Footer ----- */
@@ -160,5 +163,127 @@ footer{
     }
     footer p{
         margin: 0.7vw;
+    }
+}
+
+/* ----- Desktop -----*/
+@media only screen and (min-width: 700px){
+    /* ----- Header ----- */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vw 0 1vw 0;
+    }
+    menu{
+        width: 22vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        order: 1;
+    }
+    .logo{
+        width: 7vw;
+    }
+    .controle{
+        width: 5vw;
+    }
+    .botoes{
+        width: 5vw;
+    }
+    .title{
+        font-size: 5vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.2vw rgb(199, 103, 255);
+        text-shadow: 0.5vw 0.5vw 0 black;
+    }
+    nav{
+        border-radius: 0 0 20vw 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bol{
+        border-radius: 0 0 20vw 20vw;
+        width: 10vw;
+        height: 10vw;
+    }
+    .middleChildren{
+        width: 80vw;
+        height: 10vw;
+        border-radius: 5vw 5vw 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 0.5vw 0 0.5vw 0;
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        border-radius: 5vw;
+        font-size: 3vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.15vw rgb(0, 0, 0);
+        text-shadow: 0.3vw 0.25vw 0 rgb(168, 18, 255);
+    }
+    
+    /* ----- Main ----- */
+    main{
+        margin: 2vw 0 5vw 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 3vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.15vw rgb(0, 0, 0);
+        text-shadow: 0.2vw 0.2vw 0 rgb(168, 18, 255);
+    }
+    .camiseta{
+        border: 0.7vw solid black;
+        width: 35vw;
+    }
+    .preco{
+        font-size: 5vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.2vw rgb(0, 0, 0);
+        text-shadow: 0.2vw 0.2vw 0 rgb(168, 18, 255);
+    }
+    .precoAntigo{
+        font-size: 2vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+        text-shadow: 0 0 0;
+        text-decoration: line-through;
+    }
+    .buy{
+        margin-top: 2vw;
+        font-size: 3vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+        text-shadow: 0.2vw 0.2vw 0 black;
+        padding: 0.5vw 2vw 0.5vw 2vw;
+        border-radius: 5vw;
+    }
+
+    /* ----- Footer ----- */
+    footer{
+        padding: 1.5vw;
+        font-size: 1.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p{
+        margin: 0.2vw;
     }
 }
