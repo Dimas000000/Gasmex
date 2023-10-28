@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +10,35 @@ body{
     background-color: rgb(16, 0, 68);
 }
 header{
-    background-color: rgb(170, 0, 255);
+    background-color: rgb(168, 18, 255);
 }
 .bol{
-    background-color: rgb(170, 0, 255);
+    background-color: rgb(168, 18, 255);
 }
 .middle{
-    background-color: rgb(170, 0, 255);
+    background-color: rgb(168, 18, 255);
 }
 .middleChildren{
     background-color: rgb(16, 0, 68);
+}
+.area{
+    color: white;
+}
+.camiseta{
+    background-color: white;
+}
+.subtitle{
+    color: white;
+}
+.preco{
+    color: white;
+}
+.buy{
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
 }
 
 /* ---------- Media Queries ---------- */
@@ -25,20 +47,20 @@ header{
 @media only screen and (min-width: 0px){
     /* ----- Header ----- */
     header{
-        width: 100vw;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
     menu{
-        height: 35vw;
-        width: 80vw;
+        padding-top: 6vw;
+        padding-bottom: 3vw;
+        width: 85vw;    
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .logo{
-        width: 20vw;
+        width: 15vw;
     }
     .controle{
         width: 20vw;
@@ -49,9 +71,11 @@ header{
     .title{
         margin-bottom: 6vw;
         font-size: 12vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.4vw rgb(199, 103, 255);
+        text-shadow: 1vw 1vw 0 black;
     }
     nav{
-        width: 100vw;
         height: 15vw;
         border-radius: 0 0 20vw 20vw;
         display: flex;
@@ -67,10 +91,74 @@ header{
         width: 44vw;
         height: 20vw;
         border-radius: 7vw 7vw 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    .area{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 1vw 4vw 1vw 3vw;
+        border-radius: 5vw;
+        font-size: 7.5vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+        text-shadow: 1vw 0.5vw 0 rgb(168, 18, 255);
+    }
+    
     /* ----- Main ----- */
     main{
+        margin-top: 20vw;
+        margin-bottom: 20vw;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subtitle{
+        font-size: 9vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+        text-shadow: 1vw 0.5vw 0 rgb(168, 18, 255);
+    }
+    .camiseta{
+        border: 2vw solid black;
+        width: 80vw;
+    }
+    .preco{
+        font-size: 9vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+        text-shadow: 1vw 0.5vw 0 rgb(168, 18, 255);
+    }
+    .precoAntigo{
+        font-size: 5vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+        text-shadow: 0 0 0;
+        text-decoration: line-through;
+    }
+    .buy{
+        margin-top: 5vw;
+        font-size: 9vw;
+        font-family: 'Chakra Petch', sans-serif;
+        -webkit-text-stroke: 0.3vw rgb(0, 0, 0);
+        text-shadow: 1vw 0.5vw 0 black;
+        padding: 1vw 5vw 1vw 5vw;
+        border-radius: 5vw;
+        background-color: rgb(205, 118, 255);
+        border-color: white;
+    }
 
+    /* ----- Footer ----- */
+    footer{
+        padding: 7vw;
+        font-size: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p{
+        margin: 0.7vw;
     }
 }
